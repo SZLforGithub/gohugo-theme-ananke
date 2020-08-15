@@ -23,6 +23,10 @@
       <link rel="stylesheet" href="{{ relURL (.) }}">
     {{ end }}
 
+    {{ range .Site.Params.custom_js }}
+      <script src="{{ relURL (.) }}"></script>
+    {{ end }}
+
     {{ block "favicon" . }}
       {{ partialCached "site-favicon.html" . }}
     {{ end }}
@@ -38,7 +42,7 @@
     <script src="{{ relURL (.Site.Params.prism_js) }}"></script>
 
     <script data-ad-client="ca-pub-3625283913171459" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    
+
     {{/* NOTE: These Hugo Internal Templates can be found starting at https://github.com/spf13/hugo/blob/master/tpl/tplimpl/template_embedded.go#L158 */}}
     {{- template "_internal/opengraph.html" . -}}
     {{- template "_internal/schema.html" . -}}

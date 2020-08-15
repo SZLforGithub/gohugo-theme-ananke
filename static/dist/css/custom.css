@@ -10,3 +10,36 @@ img[src$='#circle'] {
 img[src$='#circle']:hover {
     transform:scale(1.05, 1.05);
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+main > article > aside.w-30-l {
+    position: sticky;
+    top: 2rem;
+    align-self: start;
+}
+
+.toc-nav ul {
+  list-style: none;
+  margin-left: 1rem;
+  padding-left: 0;
+}
+
+html, body, div, article, aside, section, main, nav, footer, header, form, fieldset, legend, pre, code, a, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, blockquote, figcaption, figure, textarea, table, td, th, tr, input[type="email"], input[type="number"], input[type="password"], input[type="tel"], input[type="text"], input[type="url"], .border-box {
+    box-sizing: content-box;
+}
+
+/* 3. ScrollSpy active styles (see JS tab for activation) */
+li.active > a {
+    color: #333;
+    font-weight: 500;
+}
+
+li a {
+    text-decoration: none;
+    display: block;
+    color: #ccc;
+    transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
+}
