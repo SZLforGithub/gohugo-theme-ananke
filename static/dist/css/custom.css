@@ -43,3 +43,13 @@ li a {
     color: #ccc;
     transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
 }
+
+/* Media Queries */
+@media (max-width: 1080px) {
+    main {
+        max-width: 100%;
+    }
+    .toc {
+        display: none;
+    }
+}
