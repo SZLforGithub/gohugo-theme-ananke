@@ -66,6 +66,12 @@ main > article > aside.w-30-l {
     align-self: start;
 }
 
+.toc {
+    margin-left: 15px;
+    padding-left: 30px;
+    border-left: solid 4px #367588 !important;
+}
+
 .toc-nav ul {
   list-style: none;
   margin-left: 1rem;
@@ -74,8 +80,10 @@ main > article > aside.w-30-l {
 
 /* 3. ScrollSpy active styles (see JS tab for activation) */
 li.active > a {
-    color: #333;
+    color: #367588;
     font-weight: 500;
+    padding-left: 5px;
+    border-left: solid 4px #367588 !important;
 }
 
 li a {
