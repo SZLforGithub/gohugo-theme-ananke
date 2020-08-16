@@ -1,14 +1,59 @@
-img[src$='#circle'] {
+.circle img {
     border-radius: 25%;
     margin: auto;
     width: 400px;
-    transform:scale(1, 1);
-    transition: all 0.25s ease-out;
-    -webkit-transform all 0.25s ease-out;
 }
 
-img[src$='#circle']:hover {
-    transform:scale(1.05, 1.05);
+.github {
+    width: 50px !important;
+    display: inline-block;
+    margin: 0 auto;
+    transform:scale(1, 1);
+    transition: all 0.25s ease-out;
+}
+
+.github:hover {
+    transform:scale(1.1, 1.1);
+}
+
+.mail {
+    width: 50px !important;
+    display: inline-block;
+    margin: 0 auto;
+    transform:scale(1, 1);
+    transition: all 0.25s ease-out;
+}
+
+.mail > a > img {
+    margin-bottom: 2px;
+}
+
+.mail:hover {
+    transform:scale(1.1, 1.1);
+}
+
+.website {
+    width: 50px !important;
+    display: inline-block;
+    margin: 0 auto;
+    transform:scale(1, 1);
+    transition: all 0.25s ease-out;
+}
+
+.website:hover {
+    transform:scale(1.1, 1.1);
+}
+
+.linkedin {
+    width: 48px !important;
+    display: inline-block;
+    margin: 0 auto;
+    transform:scale(1, 1);
+    transition: all 0.25s ease-out;
+}
+
+.linkedin:hover {
+    transform:scale(1.1, 1.1);
 }
 
 html {
