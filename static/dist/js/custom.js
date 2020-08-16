@@ -4,6 +4,7 @@ window.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             const id = encodeURI(entry.target.getAttribute('id')).toLowerCase();
             if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
                 document.querySelector(`li a[href="#${id}"]`).parentElement.classList.add('active');
             } else {
                 document.querySelector(`li a[href="#${id}"]`).parentElement.classList.remove('active');
@@ -17,3 +18,9 @@ window.addEventListener('DOMContentLoaded', () => {
     });
     
 });
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('.toc-nav .nav .nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
