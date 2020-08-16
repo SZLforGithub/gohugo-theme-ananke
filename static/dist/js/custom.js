@@ -1,12 +1,12 @@
 window.addEventListener('DOMContentLoaded', () => {
 
     const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
+        entries.forEach((entry, index) => {
             const id = encodeURI(entry.target.getAttribute('id')).toLowerCase();
             if (entry.intersectionRatio > 0) {
                 clearActiveStatesInTableOfContents();
                 document.querySelector(`li a[href="#${id}"]`).parentElement.classList.add('active');
-            } else {
+            } else if (entries[index+1].intersectionRatio > 0) {
                 document.querySelector(`li a[href="#${id}"]`).parentElement.classList.remove('active');
             }
         });
