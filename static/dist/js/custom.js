@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', () => {
             if (entry.intersectionRatio > 0) {
                 clearActiveStatesInTableOfContents();
                 document.querySelector(`li a[href="#${id}"]`).parentElement.classList.add('active');
-            } else if (entries[index+1].intersectionRatio > 0) {
+            } else if (typeof entries[index+1] !== "undefined" && entries[index+1].intersectionRatio > 0) {
                 document.querySelector(`li a[href="#${id}"]`).parentElement.classList.remove('active');
             }
         });
