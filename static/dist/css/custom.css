@@ -93,6 +93,18 @@ li a {
     transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
 }
 
+nav.pv3 {
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 60;
+    background-color: black;
+}
+
+div.tl-c.pv4 {
+    padding-top: 215px;
+}
+
 /* Media Queries */
 @media (max-width: 1080px) {
     main {
@@ -100,5 +112,9 @@ li a {
     }
     .toc {
         display: none;
+    }
+
+    div.pv4 {
+        padding-top: 141px;
     }
 }

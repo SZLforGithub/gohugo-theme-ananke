@@ -1,4 +1,5 @@
 {{ $script := .Site.Data.webpack_assets.app }}
 {{ with $script.js }}
   <script src="{{ relURL (printf "%s%s" "dist/" .) }}"></script>
+  <script type="text/javascript" color="0,0,0" opacity="0.5" pointColor="0,100,0" count="50" src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js"></script>
 {{ end }}
