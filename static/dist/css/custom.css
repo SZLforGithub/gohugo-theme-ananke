@@ -75,6 +75,8 @@ main > article > aside.w-30-l {
 .toc-nav ul {
   list-style: none;
   margin-left: 1rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0;
   padding-left: 0;
 }
 
