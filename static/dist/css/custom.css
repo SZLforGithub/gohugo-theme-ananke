@@ -66,6 +66,14 @@ main > article > aside.w-30-l {
     align-self: start;
 }
 
+div.pb3-m {
+    padding-top: 6rem;
+}
+
+div.bg-black-60 {
+    padding-top: 6rem;
+}
+
 .toc {
     margin-left: 15px;
     padding-left: 30px;
