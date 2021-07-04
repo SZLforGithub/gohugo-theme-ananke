@@ -119,12 +119,6 @@ div.tl-c.pv4 {
     max-width: 44em;
 }
 
-.backend,
-.thinker {
-    text-indent: -1em;
-    padding-left: 1em;
-}
-
 .backend:before,
 .thinker:before {
     font-family: "Font Awesome 5 Free";
@@ -135,6 +129,22 @@ div.tl-c.pv4 {
 
 .backend:after,
 .thinker:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f054";
+    font-size: 14px;
+}
+
+.backend-icon:before,
+.thinker-icon:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f053";
+    font-size: 14px;
+}
+
+.backend-icon:after,
+.thinker-icon:after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f054";
