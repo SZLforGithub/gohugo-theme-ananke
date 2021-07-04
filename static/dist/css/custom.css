@@ -115,6 +115,32 @@ div.tl-c.pv4 {
     padding-top: 215px;
 }
 
+.about {
+    max-width: 44em;
+}
+
+.backend,
+.thinker {
+    text-indent: -1em;
+    padding-left: 1em;
+}
+
+.backend:before,
+.thinker:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f053";
+    font-size: 14px;
+}
+
+.backend:after,
+.thinker:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f054";
+    font-size: 14px;
+}
+
 /* Media Queries */
 @media (max-width: 1080px) {
     main {
