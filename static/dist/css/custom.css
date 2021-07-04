@@ -151,6 +151,17 @@ div.tl-c.pv4 {
     font-size: 14px;
 }
 
+.my-link:hover {
+    color: #f4511e !important;
+    transition: 0.3s !important;
+}
+
+.archives-link {
+    text-decoration: none;
+    color: black !important;
+    display: flex;
+}
+
 /* Media Queries */
 @media (max-width: 1080px) {
     main {

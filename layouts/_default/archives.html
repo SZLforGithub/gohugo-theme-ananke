@@ -2,30 +2,19 @@
 {{ $section := .Site.GetPage "section" .Section }}
 
 <article class=" mw8 center ph3">
-    <div class="nested-copy-line-height lh-copy {{ $.Param "post_content_classes"  | default "serif"}} f4 nested-links nested-img mid-gray">
+    <div class="nested-copy-line-height mw7 center lh-copy {{ $.Param "post_content_classes"  | default "serif"}} f4 nested-links nested-img mid-gray">
         {{ range (.Site.RegularPages.GroupByDate "2006") }}
-        {{ if ne .Key "0001" }}
-            <h3>{{ .Key }}</h3>
-        {{ end }}
-        
-        <ul class="archive-list">
             {{ range (where .Pages "Type" "post") }}
-            <div class="flex flex-column flex-row-ns" style="margin-top: 20px;">
-                {{ $featured_image := .Params.featured_image }}
-                    <div class="pr3-ns mb4 mb0-ns w-100 w-20-ns">
-                        <a href="{{.Permalink}}" class="db grow">
-                            <img src="{{ $featured_image }}" class="img" alt="image from {{ .Title }}">
-                        </a>
-                    </div>
-                <div class="blah w-100 w-60-ns pl3-ns">
-                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                    <br>
-                    <i class="fas fa-calendar"></i>
-                    {{ .PublishDate.Format "2006-01-02" }}
+            <div class="flex flex-column flex-row-ns" style="margin: 15px 0 15px 0;">
+                <div class="blah w-100 pl3-ns">
+                    <a href="{{ .RelPermalink }}" class="my-link archives-link">
+                        <h5 style="flex: 1 1 0%; margin: 0;">{{ .Title }}</h1>
+                        <div style="font-size: .875rem;">{{ .PublishDate.Format "Jan 02, 2006" }}</div>
+                    </a>
                 </div>
             </div>
+            <hr>
             {{ end }}
-        </ul>
         {{ end }}
     </div>
 </article>
